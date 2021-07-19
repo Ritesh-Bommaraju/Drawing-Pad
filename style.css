@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2020/05/09/paint-stains-by-jonathan-brandt-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: black;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+canvas {
+    background-color:white;
+    border: 2px solid gray;
+    border-bottom: 0px;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.toolbox {
+    background-image: url(https://image.shutterstock.com/image-illustration/modern-soft-gradient-lines-colorful-260nw-1534997675.jpg);
+    background-size:initial; 
+    border: 2px solid black;
+    border-radius: 0rem 0rem 1rem 1rem;
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+}
+
+.toolbox > * {
+    background-color: #fff;
+    border: none;
+    border-radius: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    height: 50px;
+    width: 1000px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+.toolbox #color{
+    font-size: 2rem;
+    border-radius: 0;
+}
+.toolbox #clear{
+    background-color: green;
+    color: white;
+}
+.toolbox #clear:hover{
+    background-color: maroon;
+    color: white;
+}
+.toolbox button span{
+    margin-top: 0px;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 0.8;
+    background-color: white;
+    color: black;
+    border-bottom: 0px solid ghostwhite;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    margin-top: 0.2rem;
+    transition: all .3s;
+    border-bottom: 0px solid gray;
+}
+
+.toolbox #increase{
+    background-color: violet;
+    color:black;
+}
+.toolbox #decrease{
+    background-color: yellow;
+    color:black;
+}
+.toolbox span{
+    width:20rem;
+}
